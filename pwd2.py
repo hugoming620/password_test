@@ -7,13 +7,15 @@ password = 'a123456'
 c = 3 #剩餘機會
 
 while c > 0  :
+	c = c - 1
 	pwd = input('please enter your password :')
 	if pwd == password :
 		print('successful logined')
 		break
 	else :
-		c = c - 1
-		print('wrong! still have', c , 'times !')
-		if c == 0 :
-			print('no chance!')
+		print('wrong! ')
+		if c > 0 :
+			print('you still have', c , 'times !')
+		else :
+			print('no chance! 8888~')
 			
